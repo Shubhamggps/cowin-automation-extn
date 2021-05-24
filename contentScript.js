@@ -332,14 +332,14 @@ const createSelectOptions = (id, text, value, selected) => {
 
 const createHrSeparator = () => {
   let retel = document.createElement("hr");
-  retel.style = "background-color: black";
+  retel.style = "background-color: #1E1A1A";
   return retel;
 }
 const createForm = () => {
 
   // basic styles : reused
-  let textLabelStyles = "color: black";
-  let warnLabelStyles = "color: red";
+  let textLabelStyles = "color: #1E1A1A";
+  let warnLabelStyles = "color: #cc3300";
 
   // parent div for form
   let wrapperDiv = document.createElement("div");
@@ -348,7 +348,7 @@ const createForm = () => {
   // mobile number input field
   let mobileinputid = "data-mob";
   let mobileInput = createInput(mobileinputid, "", "number", mobilenumber, 'form-control');
-  let mobileLabel = createLabel("mobileinputlabel", mobileinputid, "Mobile number (first 9 digits): ", textLabelStyles);
+  let mobileLabel = createLabel("mobileinputlabel", mobileinputid, "Mobile Number (First 9 digits): ", textLabelStyles);
   let mobileNumberWarn = createWarningText(
     "You will have to enter the 10th digit in the actual website form to proceed with automation.",
     warnLabelStyles
@@ -368,19 +368,19 @@ const createForm = () => {
   // state name input field
   let stateinputid = "data-state";
   let stateInput = createInput(stateinputid, "", "text", state_name, 'form-control');
-  let stateLabel = createLabel("stateinputlabel", stateinputid, "Name of the state: ", textLabelStyles)
+  let stateLabel = createLabel("stateinputlabel", stateinputid, "Name of the State: ", textLabelStyles)
 
   // district name input field
   let districtinputid = "data-district";
   let districInput = createInput(districtinputid, "", "text", district_name, 'form-control');
-  let districLabel = createLabel("districtinputlabel", districtinputid, "District name: ", textLabelStyles);
+  let districLabel = createLabel("districtinputlabel", districtinputid, "Name of the District: ", textLabelStyles);
 
   let ageSelector = createSelectInput("ageselect", "", ageSelectorText);
   let age18 = createSelectOptions("age18", "Age 18+", "Age 18+", ageSelectorText === "Age 18+");
   let age45 = createSelectOptions("age45", "Age 45+", "Age 45+", ageSelectorText === "Age 45+");
   ageSelector.appendChild(age18);
   ageSelector.appendChild(age45);
-  let AgeSelectLabel = createLabel("ageselectlabel", "ageselect", "Age group: ", textLabelStyles)
+  let AgeSelectLabel = createLabel("ageselectlabel", "ageselect", "Age Group: ", textLabelStyles)
 
 
   // multiple members allow checkbox
@@ -419,7 +419,7 @@ const createForm = () => {
   timeSlotSelector.appendChild(two)
   timeSlotSelector.appendChild(three)
   timeSlotSelector.appendChild(four)
-  let timeslotlabel = createLabel("timeslotinputlabel", timeslotinputid, "Enter time slot preference: ", textLabelStyles);
+  let timeslotlabel = createLabel("timeslotinputlabel", timeslotinputid, "Enter Time Slot Preference: ", textLabelStyles);
   let timeslotwarn = createWarningText("If these are not the cases available there, first slot will be selected automatically.", warnLabelStyles);
 
   let minavailabilityinputid = "minavailabilityinput";
@@ -431,10 +431,10 @@ const createForm = () => {
   let searchprefid = "searchpref";
   let searchPrefSelector = createSelectInput(searchprefid, "", searchByDistrictFlag ? "district" : "pincode");
   let districtoption = createSelectOptions("districtoption", "District", "district", searchByDistrictFlag);
-  let pincodeoption = createSelectOptions("pincodeoption", "PIN code", "pincode", !!!searchByDistrictFlag);
+  let pincodeoption = createSelectOptions("pincodeoption", "PIN Code", "pincode", !!!searchByDistrictFlag);
   searchPrefSelector.appendChild(districtoption);
   searchPrefSelector.appendChild(pincodeoption);
-  let searchPrefLabel = createLabel("searchpreflabel", searchprefid, "Search by: ", textLabelStyles);
+  let searchPrefLabel = createLabel("searchpreflabel", searchprefid, "Search By: ", textLabelStyles);
 
   // add components to wrapper div
 
@@ -491,7 +491,7 @@ const createHideShowButton = () => {
   $("#formWrapper").hide();
   let formShowHide = document.createElement("button");
   formShowHide.id = "formshowhidebutton";
-  formShowHide.appendChild(document.createTextNode("click to edit the autofill inputs"));
+  formShowHide.appendChild(document.createTextNode("Autofill Inputs"));
   formShowHide.style = "background: red; position: sticky; top:0; left: 0; font-size: 32px; border-radius: 20px;";
   document.body.appendChild(formShowHide);
   $('#formshowhidebutton').on('click', () => {
@@ -541,14 +541,14 @@ const createModal = () => {
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Autofill Input Form</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title" style="margin:0 auto;">Autofill Input Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" style="margin:0 0;"></button>
       </div>
       <div class="modal-body" id="form-modal-body">
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="data-submit" data-bs-dismiss="modal">Save changes</button>
+      <div class="modal-footer" style="justify-content:center;">
+        <button type="button" class="btn btn-primary" id="data-submit" data-bs-dismiss="modal" style="background-color:#339900;font-weight: bold;padding: 0.5em 1em;" onMouseOver="this.style.backgroundColor='#006400'" onMouseOut="this.style.backgroundColor='#339900'">Save Changes</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="padding: 0.5em 1em;font-weight: bold;">Close</button>
       </div>
     </div>
   </div>
@@ -561,7 +561,7 @@ const createModal = () => {
 const createModalHideShowButton = () => {
   let wrapperDiv = document.createElement("div");
   let button = `
-  <button type="button" class="btn btn-danger btn-lg" style="position:absolute; top:2%; left: 2%; font-size: 2em;" data-bs-toggle="modal" data-bs-target="#form-modal">Edit Auto Fill Inputs</button>`
+  <button type="button" class="btn btn-danger btn-lg" style="position:absolute; top:2%; left: 2%; font-size: 2.5em;font-weight: bold;" data-bs-toggle="modal" data-bs-target="#form-modal">Auto Fill Inputs</button>`
   wrapperDiv.innerHTML = button;
   document.body.appendChild(wrapperDiv);
 }
