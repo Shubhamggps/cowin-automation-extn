@@ -502,14 +502,14 @@ const createHideShowButton = () => {
 let adimg = document.createElement("button");
   adimg.id = "adimgbutton";
   adimg.appendChild(document.createTextNode("CLICK HERE TO AD WITH US!"));
-  adimg.style = "background: red; position: sticky; top:90vh; left: 0; font-size: 5vh;height:10vh;width:100vw;";
+  adimg.style = "background: rgb(220, 53, 59); position: sticky; top:90vh; left: 0; font-size: 5vh;height:10vh;width:100vw;font-weight:bold;color:#fff;";
   document.body.appendChild(adimg);
   $('#adimgbutton').on('click', () => {
-    
+
   })
   let adimg_video = document.createElement("iframe");
   adimg_video.id = "advideobutton";
-  adimg_video.style = "position: sticky; top:60vh; margin-bottom:10vh;left: 70vw; height:30vh;width:20vw;";
+  adimg_video.style = "position: sticky; top:60vh;margin-bottom:10vh;left: 74vw; height:50vh;width:25vw;";
   adimg_video.src="https://images.indianexpress.com/2020/08/daily-numbers.jpg";
   document.body.appendChild(adimg_video);
 
