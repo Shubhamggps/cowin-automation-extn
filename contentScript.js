@@ -608,6 +608,11 @@ let adimg = document.createElement("button");
   var d1 = document.getElementById('wrap_video');
   
   // var img_list=[];
+  
+$.getJSON("https://api.countapi.xyz/hit/cowin/visits", function(response) {
+  //alert(response.value);
+});
+
   var glob;
   var ele=' <img id="frameimg" style="background:transparent; z-index:2100;position: absolute;bottom: 10vh;right: 5px; padding: 0; width: 25vw; height: 25vh;">';
   d1.insertAdjacentHTML('beforebegin', ele);
