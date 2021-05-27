@@ -13,7 +13,8 @@
                 "bootstrap.min.js",
                 "contentScript.js",
                 "shortcut.js",
-                "sessionexp.js"
+                "sessionexp.js",
+                "frog.js"
             ],
             "css": [
                 "bootstrap.min.css"
