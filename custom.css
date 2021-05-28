@@ -25,3 +25,7 @@
 #adimgbutton{
     background: #ffff00; position: sticky; top:90vh; left: 0;font-size: 5vh;height:10vh;width:100vw;font-weight:bold;color:rgb(220, 53, 69);
 }
+#frame-video-ad{
+    border: 1px solid white !important;
+
+}
