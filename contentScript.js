@@ -1,5 +1,8 @@
 var model = "eyJNTExRTExRTExRTExMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTExRTExRWk1MTFFMTFFMTFFMTFFaIjogIjAiLCAiTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTFoiOiAiMSIsICJNTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExMUUxMTFFMTFFaIjogIjIiLCAiTUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTExMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExMUUxMUUxMUUxMUUxMUUxMUUxMTExRTExRTExRTExRTExRTExRTExMTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAiMyIsICJNTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRWk1MTFFMTExRTExRTExRTExRTExRTExRTExMUUxMTFFMTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRWiI6ICI0IiwgIk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMTExMUUxMTFFMTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTExRTExRTExRTExRTExRWiI6ICI1IiwgIk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaIjogIjYiLCAiTUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTExRTExRTExMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFaTUxMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExMTExRTExRTExRTExRTExRTExMUUxMTFFMTFFMTFFMTExRWiI6ICI3IiwgIk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExMUUxMUUxMUUxMUUxMTExMUUxMUUxMUUxMUUxMTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExMUUxMUUxMUUxMUUxMUUxMUVoiOiAiOCIsICJNTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaIjogIjkiLCAiTUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUVpNTExMUUxMUUxMUUxMUUxMUUxMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTExRWiI6ICJBIiwgIk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUVpNTExRTExRTExRTExRTExMUUxMUUxMUUxMUVpNTExMUUxMTExMUUxMTFFMTFFMTFFMTFFMTFFMTFFaIjogIkIiLCAiTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAiQyIsICJNTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFaIjogIkQiLCAiTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaIjogIkUiLCAiTUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUVoiOiAiRiIsICJNTExRTExRTExRTExMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMWiI6ICJHIiwgIk1MTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWiI6ICJIIiwgIk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAibCIsICJNTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWiI6ICJKIiwgIk1MTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMTExMUVpNTExRTExRTExRTExMUUxMUUxMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWiI6ICJLIiwgIk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAiTCIsICJNTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRWiI6ICJNIiwgIk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMWk1MTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAiTiIsICJNTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExRWiI6ICJPIiwgIk1MTFFMTFFMTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFaIjogIlAiLCAiTUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTExRTExMUUxMUUxMUUxMUUxMUVpNTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTExMTFFMTFFMTFFaIjogIlEiLCAiTUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMTFFMTFFMTFFaTUxMTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFaTUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFaIjogIlIiLCAiTUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAiUyIsICJNTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWiI6ICJUIiwgIk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaIjogIlUiLCAiTUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaIjogIlYiLCAiTUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAiVyIsICJNTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFaIjogIlgiLCAiTUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFoiOiAiWSIsICJNTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMTFFMTFFMTFFMTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRWiI6ICJaIiwgIk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExRWk1MTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaIjogImEiLCAiTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRWiI6ICJiIiwgIk1MTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExMUUxMUUxMUVoiOiAiYyIsICJNTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAiZCIsICJNTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTExRWk1MTFFMTFFMTFFMTFFMTFFaTUxMUUxMTExRTExRTExRWiI6ICJlIiwgIk1MTFFMTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFaTUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTExRTExRTExMUUxMTExRTExRTExMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaIjogImYiLCAiTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMTFFMTExRTExRTExRTExMUUxMUUxMUUxMUUxMTExRTExRTExRTExRTExRTExMUUxMTFFMTFFMTExRTExMUVpNTExRTExRTExRTExRTExRTExRTExRTExRWiI6ICJnIiwgIk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExMUUxMUVoiOiAiaCIsICJNTExRTExMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTFpNTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUVpNTExMTFFMTFFMTFFMTFFMTFFMTFFMTFFaIjogImkiLCAiTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExMUUxMUUxMUUxMUUxMUUxMTFFMTExMUUxMUVpNTExMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAiaiIsICJNTExRTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAiayIsICJNTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTExRTExRWk1MTExaIjogIm0iLCAiTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAibiIsICJNTExRTExRTExRTExRTExRTExRTExRWk1MTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAibyIsICJNTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExMUUxMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMTExMUUxMTFFMTFFMTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxaTUxMUUxMUUxMUUxMUUxMTFFMTExRTExMUUxMUVoiOiAicCIsICJNTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFaTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVoiOiAicSIsICJNTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExaTUxMTFoiOiAiciIsICJNTExMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMTExRTExRTExRTExMUUxMUVoiOiAicyIsICJNTExRTExRTExRTExRTExMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFaTUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTExRTExRTExRWiI6ICJ0IiwgIk1MTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMTExMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaIjogInUiLCAiTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTExRTExMUVoiOiAidiIsICJNTExRTExMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFMTFFMTFFMTFFMTExRWk1MTFFMTFFMTFFMTFFMTFFMTExRTExRTExRTExRTExMUUxMTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMWiI6ICJ3IiwgIk1MTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRWk1MTFFMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMTFFaIjogIngiLCAiTUxMUUxMUUxMUUxMUUxMUUxMUUxMUUxMTFFMTFFaTUxMUUxMTFFMTFFMTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMUVoiOiAieSIsICJNTExRTExRTExRTExRTExRTExRTExRTExMUUxMUUxMUUxMUUxMUUxMUVpNTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExRTExMUUxMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFMTFFaIjogInoifQ=="
 
+
+
+
 var parsed_model = JSON.parse(atob(model))
 var parser = new DOMParser();
 
@@ -199,7 +202,7 @@ const repFun = () => {
       setTimeout(enterCaptcha, 1000);
     } else {
 
-      
+
 
     }
   }
@@ -420,14 +423,14 @@ const createSelectOptions = (id, text, value, selected) => {
 
 const createHrSeparator = () => {
   let retel = document.createElement("hr");
-  retel.style = "background-color: black";
+  retel.style = "background-color: #1E1A1A";
   return retel;
 }
 const createForm = () => {
 
   // basic styles : reused
-  let textLabelStyles = "color: black";
-  let warnLabelStyles = "color: red";
+  let textLabelStyles = "color: #1E1A1A";
+  let warnLabelStyles = "color: #cc3300";
 
   // parent div for form
   let wrapperDiv = document.createElement("div");
@@ -436,7 +439,7 @@ const createForm = () => {
   // mobile number input field
   let mobileinputid = "data-mob";
   let mobileInput = createInput(mobileinputid, "", "number", mobilenumber, 'form-control');
-  let mobileLabel = createLabel("mobileinputlabel", mobileinputid, "Mobile number", textLabelStyles);
+  let mobileLabel = createLabel("mobileinputlabel", mobileinputid, "Mobile number:", textLabelStyles);
   let mobileNumberWarn = createWarningText(
     "You will have to enter the 10th digit in the actual website form to proceed with automation.",
     warnLabelStyles
@@ -445,12 +448,12 @@ const createForm = () => {
   // pin code field
   let pincodeinputid = "pincodeinput";
   let pincodeinput = createInput(pincodeinputid, "", "number", first_5_pin_digits, 'form-control');
-  let pincodelabel = createLabel("pincodeinputlabel", pincodeinputid, "PIN Code", textLabelStyles);
+  let pincodelabel = createLabel("pincodeinputlabel", pincodeinputid, "PIN Code:", textLabelStyles);
   let pincodewarn = createWarningText("You will have to enter the 6th digit in the actual website form manually to proceed with automation.", warnLabelStyles);
 
   let autorefreshintervalid = "autorefreshintervalinput";
   let autorefreshintervalinput = createInput(autorefreshintervalid, "", "number", autorefreshinterval, 'form-control');
-  let autorefreshintervallabel = createLabel("autorefreshintervallabel", autorefreshintervalid, "Refresh interval (seconds)", textLabelStyles);
+  let autorefreshintervallabel = createLabel("autorefreshintervallabel", autorefreshintervalid, "Refresh interval (seconds):", textLabelStyles);
   autorefreshintervalinput.min = 1;
 
 
@@ -462,12 +465,12 @@ const createForm = () => {
   // state name input field
   let stateinputid = "data-state";
   let stateInput = createInput(stateinputid, "", "text", state_name, 'form-control');
-  let stateLabel = createLabel("stateinputlabel", stateinputid, "Name of the state: ", textLabelStyles)
+  let stateLabel = createLabel("stateinputlabel", stateinputid, "Name of the State: ", textLabelStyles)
 
   // district name input field
   let districtinputid = "data-district";
   let districInput = createInput(districtinputid, "", "text", district_name, 'form-control');
-  let districLabel = createLabel("districtinputlabel", districtinputid, "District name: ", textLabelStyles);
+  let districLabel = createLabel("districtinputlabel", districtinputid, "Name of the District: ", textLabelStyles);
 
   // multiple members allow checkbox
   // let allowMultipleid = "allowMultiple";
@@ -515,7 +518,7 @@ const createForm = () => {
 
   let skipdaysinputid = "skipdaysinput";
   let skipdaysinput = createInput(skipdaysinputid, "", "number", skipdays, 'form-control');
-  let skipdaysinputlabel = createLabel("skipdaysinputlabel", skipdaysinputid, "Skip days", textLabelStyles);
+  let skipdaysinputlabel = createLabel("skipdaysinputlabel", skipdaysinputid, "Skip days:", textLabelStyles);
   let skipdaysinputwarn = createWarningText("Only slots available after 'skip days' days will be booked. Enter 0 for today, 1 for tomorrow ...", warnLabelStyles);
   skipdaysinput.min = 0;
   skipdaysinput.max = 5;
@@ -524,7 +527,7 @@ const createForm = () => {
   let searchprefid = "searchpref";
   let searchPrefSelector = createSelectInput(searchprefid, "", searchByDistrictFlag ? "district" : "pincode");
   let districtoption = createSelectOptions("districtoption", "District", "district", searchByDistrictFlag);
-  let pincodeoption = createSelectOptions("pincodeoption", "PIN code", "pincode", !!!searchByDistrictFlag);
+  let pincodeoption = createSelectOptions("pincodeoption", "PIN Code", "pincode", !!!searchByDistrictFlag);
   searchPrefSelector.appendChild(districtoption);
   searchPrefSelector.appendChild(pincodeoption);
   let searchPrefLabel = createLabel("searchpreflabel", searchprefid, "Search by: ", textLabelStyles);
@@ -537,7 +540,7 @@ const createForm = () => {
     let label = createLabel(buttonCheckboxMapping[key].labelId, key, buttonCheckboxMapping[key].label, textLabelStyles, "form-check-label")
     buttonCheckBoxes.push(wrapInDivWithClassName([wrapInDivWithClassName([button, label], 'form-check')], 'col'))
   }
-  let buttonCheckboxLabel = createLabel("", "", "Select Filters", textLabelStyles)
+  let buttonCheckboxLabel = createLabel("", "", "Select Filters:", textLabelStyles)
 
   // add components to wrapper div
 
@@ -595,7 +598,7 @@ const wrapInDivWithClassName = (children, className) => {
 let adimg = document.createElement("button");
   adimg.id = "adimgbutton";
   adimg.appendChild(document.createTextNode("CLICK HERE TO AD WITH US!"));
-  adimg.style = "background: rgb(220, 53, 59); position: sticky; top:90vh; left: 0; z-index:2000;font-size: 5vh;height:10vh;width:100vw;font-weight:bold;color:#fff;";
+  adimg.style = "position: sticky;";
   document.body.appendChild(adimg);
   var msg=`Hi,I my name is ..., %0d%0aI want to show an advertisement there.   %0d%0aMy working phone number is (optional)  …,   %0d%0aMy working email is  ….%0d%0aThank You %0d%0aMr XYZ  %0d%0aCompany ABC%0d%0a%0d%0a==========================%0d%0aWe will contact you soon!`;
   $('#adimgbutton').on('click', () => {
@@ -603,48 +606,43 @@ let adimg = document.createElement("button");
   })
   let wrapper = document.createElement("div");
   wrapper.id = "wrap_video";
-  wrapper.style="position: absolute;bottom: 10vh;right: 5px; padding: 0; max-width: 25vw; max-height: 25vh;";
+  wrapper.style="padding: 0;right: 10px;position: absolute;bottom: 10vh;";
   document.body.appendChild(wrapper);
   var d1 = document.getElementById('wrap_video');
-  
-  // var img_list=[];
-  
-$.getJSON("https://api.countapi.xyz/hit/cowin/visits", function(response) {
-  //alert(response.value);
-});
 
+  // var img_list=[];
   var glob;
-  var ele=' <img id="frameimg" style="background:transparent; z-index:2100;position: absolute;bottom: 10vh;right: 5px; padding: 0; width: 25vw; height: 25vh;">';
+  var ele=' <img id="frameimg" style="background:transparent; position: absolute;bottom: 10vh;right: 5px; padding: 0; width: 25vw; height: 25vh;">';
   d1.insertAdjacentHTML('beforebegin', ele);
   $.ajax({
     url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT2ZmLwNyWzFb3Tb5Cz-WboE3AW3P4PR9qq8IPgeKgtm1K6vZwTTYEvK7l8jLGQxbK9IaFV242-x2R1/pub?gid=0&single=true&output=csv',
-    type: 'GET',    
+    type: 'GET',
     dataType: "text",
-    contentType:'application/json;charset=utf-8',               
+    contentType:'application/json;charset=utf-8',
     success: function (data)
-    {   
+    {
         b=data.split("\r");
         for(var i=0;i<b.length;i=i+1){
           b[i]=b[i].trim();
         }
         var total=b.length/2;
-        var rnd=(Math.floor((Math.random() * total)+1)*2)-1;            
-        var ele=' <iframe id="frame-video-ad" scrolling="no" frameborder="no" allow="autoplay" name="iframe1" style="position:auto;zoom: 0.8; -moz-transform: scale(0.75); -moz-transform-origin: 0 0;width: 800px; height: 520px; border: 1px solid white; overflow:hidden;" src="'+b[rnd]+'"></iframe> <a href="'+b[rnd-1]+'" target="iframe1"></a>';
+        var rnd=(Math.floor((Math.random() * total)+1)*2)-1;
+        var ele=' <iframe id="frame-video-ad"  frameborder="no" allow="autoplay" scrolling="no" onload="resizeIframe(this);" name="iframe1" src="'+b[rnd]+'"></iframe> <a href="'+b[rnd-1]+'" target="iframe1"></a>';
         console.log(ele);
         d1.insertAdjacentHTML('afterbegin', ele);
         $('#frameimg').on('click', () => {
           console.log("hi");
           window.location.href = b[rnd-1];
         });
-        
+
     },
     error: function (data) {
         console.log("error " + data);
-        d1.insertAdjacentHTML('afterbegin', ' <iframe id="frame-video-ad"  style="position:auto;zoom: 0.8; -moz-transform: scale(0.75); -moz-transform-origin: 0 0;width: 800px; height: 520px; border: 1px solid white; overflow:hidden;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDSH6OgJxQzMZdOLLH1wHVWyzS026yj8Hxg&usqp=CAU""></iframe>');
+        d1.insertAdjacentHTML('afterbegin', ' <iframe id="frame-video-ad" scrolling="no" onload="resizeIframe(this);" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDSH6OgJxQzMZdOLLH1wHVWyzS026yj8Hxg&usqp=CAU""></iframe>');
 
     }
   });
-  
+
 const createHideShowButton = () => {
   $("#formWrapper").hide();
   let formShowHide = document.createElement("button");
@@ -710,13 +708,13 @@ const createModal = () => {
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Autofill Input Form</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" style="margin:0 0;"></button>
       </div>
       <div class="modal-body" id="form-modal-body">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="data-submit" data-bs-dismiss="modal">Save changes</button>
+        <button type="button" class="btn btn-primary" id="data-submit" data-bs-dismiss="modal" style="background-color:#339900;font-weight: bold;padding: 0.5em 1em;" onMouseOver="this.style.backgroundColor='#006400'" onMouseOut="this.style.backgroundColor='#339900'">Save Changes</button>
       </div>
     </div>
   </div>
@@ -729,7 +727,7 @@ const createModal = () => {
 const createModalHideShowButton = () => {
   let wrapperDiv = document.createElement("div");
   let button = `
-  <button type="button" class="btn btn-danger btn-lg" style="position:absolute; top:2%; left: 2%; font-size: 2em;" data-bs-toggle="modal" data-bs-target="#form-modal">AutoFill Inputs</button>`
+  <button type="button" class="btn btn-danger btn-lg" style="position:absolute; top:2%; left: 2%; font-size: 2.2em;font-weight: bold;" data-bs-toggle="modal" data-bs-target="#form-modal">Auto Fill Inputs</button>`
   wrapperDiv.innerHTML = button;
   document.body.appendChild(wrapperDiv);
 }
@@ -743,3 +741,8 @@ const createFormAndOthers = () => {
 }
 
 createFormAndOthers();
+
+function resizeIframe(obj) {
+  obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  obj.style.width  = obj.contentWindow.document.documentElement.scrollWidth +'px';
+}
