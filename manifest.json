@@ -18,6 +18,7 @@
             ],
             "css": [
                 "bootstrap.min.css"
+                "custom.css"
             ]
         }
     ],
