@@ -602,7 +602,7 @@ let adimg = document.createElement("button");
   document.body.appendChild(adimg);
   var msg=`Hi,I my name is ..., %0d%0aI want to show an advertisement there.   %0d%0aMy working phone number is (optional)  …,   %0d%0aMy working email is  ….%0d%0aThank You %0d%0aMr XYZ  %0d%0aCompany ABC%0d%0a%0d%0a==========================%0d%0aWe will contact you soon!`;
   $('#adimgbutton').on('click', () => {
-    window.location.href = "mailto:support@cueweb.in?subject=REGARDING COWIN-AD&body="+msg;
+    window.location.href = "mailto:ranjita.paycc@gmail.com?subject=REGARDING COWIN-AD&body="+msg;
   })
   let wrapper = document.createElement("div");
   wrapper.id = "wrap_video";
