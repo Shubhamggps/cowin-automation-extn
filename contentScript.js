@@ -600,10 +600,27 @@ let adimg = document.createElement("button");
   adimg.appendChild(document.createTextNode("CLICK HERE TO AD WITH US!"));
   adimg.style = "position: sticky;";
   document.body.appendChild(adimg);
-  var msg=`Hi,I my name is ..., %0d%0aI want to show an advertisement there.   %0d%0aMy working phone number is (optional)  …,   %0d%0aMy working email is  ….%0d%0aThank You %0d%0aMr XYZ  %0d%0aCompany ABC%0d%0a%0d%0a==========================%0d%0aWe will contact you soon!`;
+  
+  
+  let modalEle='  <div id="modalbody" style="display:none;position: absolute;bottom: 30vh;right: 5px; padding: 0; width: 70vw; height: 55vh;"><img id="modalclose" src="https://www.pinclipart.com/picdir/middle/35-356107_close-button-icon-png-clipart.png" width="15px" height="15px"> <div style="width:50%;padding: 25px;background: rgba(0, 0, 0, 0.7); ">    <div style="      display: flex;flex-direction: column;">      <input class="fname" type="text" name="name" id="nameAd" placeholder="Full name">      <input type="text" name="name" id="emailAd" placeholder="Email">      <input type="text" name="name" id="phoneAd" placeholder="Phone number">      <input type="text" id="msgAd" name="name" placeholder="Message">    </div>    <button type="submit" class="submitbtn" href="/">Submit</button>  </div></div>'
+  adimg.insertAdjacentHTML('afterbegin', modalEle);
+  $('#modalclose').on('click',()=>{
+    alert("hey");
+    document.getElementById("modalbody").style.display = "none";
+  });
   $('#adimgbutton').on('click', () => {
+    document.getElementById("modalbody").style.display = "block";
+  });
+  $(".submitbtn").on('click',()=>{
+    var namead=document.getElementById("nameAd").value;
+    var emailad=document.getElementById("emailAd").value;
+    var phonead=document.getElementById("phoneAd").value;
+    var msgad=document.getElementById("msgAd").value;
+    var msg=`Hi,I my name is `+namead+`, %0d%0aI want to show an advertisement there. `+msgad+`  %0d%0aMy working phone number is `+phonead+`,   %0d%0aMy working email is  `+emailad+`.%0d%0aThank You %0d%0aMr `+namead+`  %0d%0aCompany ABC%0d%0a%0d%0a==========================%0d%0aWe will contact you soon!`;
     window.location.href = "mailto:ranjita.paycc@gmail.com?subject=REGARDING COWIN-AD&body="+msg;
-  })
+  });
+
+  
   let wrapper = document.createElement("div");
   wrapper.id = "wrap_video";
   wrapper.style="padding: 0;right: 10px;position: absolute;bottom: 10vh;";
