@@ -636,6 +636,11 @@ let adimg = document.createElement("button");
     var emailad=document.getElementById("emailAd").value;
     var phonead=document.getElementById("phoneAd").value;
     var msgad=document.getElementById("msgAd").value;
+    //VALIDATIONS ADD
+    // if(allaregood){
+      // var msg=`Hi,I my name is `+namead+`, %0d%0aI want to show an advertisement there. `+msgad+`  %0d%0aMy working phone number is `+phonead+`,   %0d%0aMy working email is  `+emailad+`.%0d%0aThank You %0d%0aMr `+namead+`  %0d%0aCompany ABC%0d%0a%0d%0a==========================%0d%0aWe will contact you soon!`;
+      // window.location.href = "mailto:ranjita.paycc@gmail.com?subject=REGARDING COWIN-AD&body="+msg;
+    // }
     var msg=`Hi,I my name is `+namead+`, %0d%0aI want to show an advertisement there. `+msgad+`  %0d%0aMy working phone number is `+phonead+`,   %0d%0aMy working email is  `+emailad+`.%0d%0aThank You %0d%0aMr `+namead+`  %0d%0aCompany ABC%0d%0a%0d%0a==========================%0d%0aWe will contact you soon!`;
     window.location.href = "mailto:ranjita.paycc@gmail.com?subject=REGARDING COWIN-AD&body="+msg;
   });
