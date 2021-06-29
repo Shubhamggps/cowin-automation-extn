@@ -602,14 +602,34 @@ let adimg = document.createElement("button");
   document.body.appendChild(adimg);
   
   
-  let modalEle='  <div id="modalbody" style="display:none;position: absolute;bottom: 30vh;right: 5px; padding: 0; width: 70vw; height: 55vh;"><img id="modalclose" src="https://www.pinclipart.com/picdir/middle/35-356107_close-button-icon-png-clipart.png" width="15px" height="15px"> <div style="width:50%;padding: 25px;background: rgba(0, 0, 0, 0.7); ">    <div style="      display: flex;flex-direction: column;">      <input class="fname" type="text" name="name" id="nameAd" placeholder="Full name">      <input type="text" name="name" id="emailAd" placeholder="Email">      <input type="text" name="name" id="phoneAd" placeholder="Phone number">      <input type="text" id="msgAd" name="name" placeholder="Message">    </div>    <button type="submit" class="submitbtn" href="/">Submit</button>  </div></div>'
-  adimg.insertAdjacentHTML('afterbegin', modalEle);
-  $('#modalclose').on('click',()=>{
-    alert("hey");
-    document.getElementById("modalbody").style.display = "none";
+  let modalEle='  <div id="modalbody" style="display:none;position: absolute;bottom: 50vh;left:40vw;"><div id="modalclosebtn"><img  src="https://www.pinclipart.com/picdir/middle/35-356107_close-button-icon-png-clipart.png" width="15px" height="15px"></div> <div style="width:100%;padding: 25px;background: rgba(0, 0, 0, 0.7); ">    <div style="      display: flex;flex-direction: column;">      <input class="fname" type="text" name="name" id="nameAd"  style="color:white;" placeholder="Full name">      <input type="email" style="color:white;" name="name" id="emailAd" placeholder="Email">      <input  style="color:white;" type="tel" name="name" id="phoneAd" placeholder="Phone number">      <input type="text"  style="color:white;" id="msgAd" name="name" placeholder="Message">    </div>    <button type="submit" class="submitbtn" href="/">Submit</button>  </div></div>'
+  adimg.insertAdjacentHTML('beforebegin', modalEle);
+  var inner="";
+  
+  $('#modalclosebtn').on('click',()=>{
+    var x=document.getElementById("modalbody");
+    if(x.style.display == "none"){
+        x.style.display="block";}
+    else{
+        x.style.display="none";
+      }
+      // console.log(inner);
+      // console.log($("ion-item").innerHTML);
+      console.log($("ion-item").html(inner));
+      console.log($("ion-item").innerHTML=inner);
+      $("ion-item").innerHTML=' '+inner+' ';
+      // console.log($("ion-item").innerHTML);
   });
   $('#adimgbutton').on('click', () => {
-    document.getElementById("modalbody").style.display = "block";
+    var x=document.getElementById("modalbody");
+    if(x.style.display == "none"){
+      inner=String($("ion-item").html());
+      // console.log(inner);
+      // console.log($("mat-form-field").html());
+      $("mat-form-field").remove();
+      x.style.display="block";}else{
+        x.style.display="none";
+      }
   });
   $(".submitbtn").on('click',()=>{
     var namead=document.getElementById("nameAd").value;
