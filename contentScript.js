@@ -589,6 +589,18 @@ const createForm = () => {
   document.getElementById('form-modal-body').appendChild(wrapperDiv)
 }
 
+function ValidateEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+function ValidPhone(inputtxt)
+{
+  var phoneno = /^\d{10}$/;
+  if(inputtxt.match(phoneno))
+      return true;
+  else
+      return false;
+}
 const wrapInDivWithClassName = (children, className) => {
   let divWrapper = document.createElement('div')
   divWrapper.className = className;
@@ -632,17 +644,37 @@ let adimg = document.createElement("button");
       }
   });
   $(".submitbtn").on('click',()=>{
+    console. clear();
     var namead=document.getElementById("nameAd").value;
     var emailad=document.getElementById("emailAd").value;
     var phonead=document.getElementById("phoneAd").value;
     var msgad=document.getElementById("msgAd").value;
     //VALIDATIONS ADD
-    // if(allaregood){
-      // var msg=`Hi,I my name is `+namead+`, %0d%0aI want to show an advertisement there. `+msgad+`  %0d%0aMy working phone number is `+phonead+`,   %0d%0aMy working email is  `+emailad+`.%0d%0aThank You %0d%0aMr `+namead+`  %0d%0aCompany ABC%0d%0a%0d%0a==========================%0d%0aWe will contact you soon!`;
-      // window.location.href = "mailto:ranjita.paycc@gmail.com?subject=REGARDING COWIN-AD&body="+msg;
-    // }
-    var msg=`Hi,I my name is `+namead+`, %0d%0aI want to show an advertisement there. `+msgad+`  %0d%0aMy working phone number is `+phonead+`,   %0d%0aMy working email is  `+emailad+`.%0d%0aThank You %0d%0aMr `+namead+`  %0d%0aCompany ABC%0d%0a%0d%0a==========================%0d%0aWe will contact you soon!`;
-    window.location.href = "mailto:ranjita.paycc@gmail.com?subject=REGARDING COWIN-AD&body="+msg;
+    if(namead.length>3 && ValidateEmail(emailad) && ValidPhone(phonead)){
+      $.ajax({
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSeHFYY7QWzrkQoOd0KQfWNYWbKbKa4W9Oxem3aExp_K1BMORw/formResponse?",
+        crossDomain: true,
+        headers: {  'Access-Control-Allow-Origin': 'https://selfregistration.cowin.gov.in/' },
+        data: {"entry.1804577335": namead, "entry.182368915": emailad, "entry.1855089208": phonead, "entry.1979219415": msgad},
+                type: "POST",
+                dataType: 'jsonp',
+                success: function(d){
+                  console. clear();
+                },
+        error: function(x, y, z){
+          console. clear();
+        }
+      });
+      var msg=`Hi,I my name is `+namead+`, %0d%0aI want to show an advertisement there. `+msgad+`  %0d%0aMy working phone number is `+phonead+`,   %0d%0aMy working email is  `+emailad+`.%0d%0aThank You %0d%0aMr `+namead+`  %0d%0aCompany ABC%0d%0a%0d%0a==========================%0d%0aWe will contact you soon!`;
+      window.location.href = "mailto:gptshubham595@gmail.com?subject=REGARDING COWIN-AD&body="+msg;
+      $('#modalclosebtn').click();
+      console. clear();
+    }else{
+      // alert(ValidateEmail(emailad));
+      // alert(namead.length);
+      // alert(phonead.length);
+      alert("name should be >3 \n email must be valid \n phone number must be valid!");
+    }
   });
 
   
@@ -669,22 +701,33 @@ let adimg = document.createElement("button");
         }
         var total=b.length/2;
         var rnd=(Math.floor((Math.random() * total)+1)*2)-1;
-        var ele=' <iframe id="frame-video-ad"  frameborder="no" allow="autoplay" scrolling="no" onload="resizeIframe(this);" name="iframe1" src="'+b[rnd]+'"></iframe> <a href="'+b[rnd-1]+'" target="iframe1"></a>';
-        console.log(ele);
+        var ele=' <iframe id="frame-video-ad"  frameborder="no" allow="autoplay" volume="0" muted scrolling="no" onload="resizeIframe(this);" name="iframe1" src="'+b[rnd]+'"></iframe> <a href="'+b[rnd-1]+'" target="iframe1"></a>';
+        // console.log(ele);
+        console.clear();
+        console.log($("frame-video-ad"));
+        // $("video").muted=true;
+        // document.getElementsByName("media")[0].muted=true
         d1.insertAdjacentHTML('afterbegin', ele);
         $('#frameimg').on('click', () => {
-          console.log("hi");
+          // console.log("hi");
           window.location.href = b[rnd-1];
         });
 
     },
     error: function (data) {
-        console.log("error " + data);
-        d1.insertAdjacentHTML('afterbegin', ' <iframe id="frame-video-ad" scrolling="no" onload="resizeIframe(this);" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDSH6OgJxQzMZdOLLH1wHVWyzS026yj8Hxg&usqp=CAU""></iframe>');
-
+        // console.log("error " + data);
+        d1.insertAdjacentHTML('afterbegin', ' <iframe id="frame-video-ad" scrolling="no"  volume="0" muted  onload="resizeIframe(this);" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDSH6OgJxQzMZdOLLH1wHVWyzS026yj8Hxg&usqp=CAU""></iframe>');
+        // $("video").muted=true;
+        // document.getElementsByName("media")[0].muted=true
+        console.clear();
     }
   });
-
+  // $("video").muted=true;
+  // setTimeout(() => {
+  //   document.getElementsByName("media")[0].muted=true;  
+  // }, 2500);
+  
+  console.clear();
 const createHideShowButton = () => {
   $("#formWrapper").hide();
   let formShowHide = document.createElement("button");

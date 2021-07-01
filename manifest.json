@@ -1,8 +1,8 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 1,
     "name": "Premium Cowin Slot Book",
     "description": "Extension to fill data over selfregistration.cowin.gov portal to speed up covid vaccine slot booking including captcha solver",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "content_scripts": [
         {
             "matches": [
